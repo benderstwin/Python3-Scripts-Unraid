@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/bender77/docker-templates/master/python3collector.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/python3collector.xml</TemplateURL>
 <Beta>True</Beta>
 <Category>Monitor: Network:Other</Category>
 <Date>2018-11-08</Date>
