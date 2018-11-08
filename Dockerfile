@@ -5,7 +5,7 @@ WORKDIR /app
 ADD . /app
 
 # Using pip:
-
+VOLUME [ "/app" ]
 CMD ["entry.sh","/bin/bash"]
 
 # Using pipenv:
