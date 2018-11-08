@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  python3-scripts-unraid:
+    image: python3-scripts-unraid
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

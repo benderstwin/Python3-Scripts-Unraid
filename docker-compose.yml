@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  python3-scripts-unraid:
+    image: python3-scripts-unraid
+    build: .
+    ports:
+      - 3000:3000
