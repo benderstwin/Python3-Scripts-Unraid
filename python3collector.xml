@@ -38,12 +38,12 @@
   <Data>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/app</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/collectors</ContainerDir>
+      <ContainerDir></ContainerDir>
   </Data>
   <Environment>
     <Variable>
