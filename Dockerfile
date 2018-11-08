@@ -6,7 +6,8 @@ ADD . /app
 
 # Using pip:
 VOLUME [ "/app" ]
-CMD ["entry.sh","/bin/bash"]
+
+CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv

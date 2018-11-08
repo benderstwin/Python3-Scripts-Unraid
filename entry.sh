@@ -1,3 +1,3 @@
 #!/bin/bash
-python3 -m pip install -r config/requirements.txt
-crontab config/cron
+pip3 install -r "/app/config/requirements.txt"
+crontab "/config/cron"
