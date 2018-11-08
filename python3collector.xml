@@ -15,12 +15,12 @@
 <Support>nobody</Support>
   <Repository>bender77/Python3-Scripts-Unraid</Repository>
   <Project></Project>
-  <Registry>https://hub.docker.com/r/linuxserver/Python3-Scripts-Unraid</Registry>
+  <Registry>https://hub.docker.com/r/benderstwin/Python3-Scripts-Unraid</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Overview>Python3 container for executing various scripts.  Includes Python-Cron </Overview>
   <WebUI>http://[IP]:[PORT:8675309]/</WebUI>
-  <Icon></Icon>
+  <Icon>https://github.com/benderstwin/Python3-Scripts-Unraid/blob/master/Python.png</Icon>
   <Description>Container Description Goes Here [br]&#xD;
   [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
   [b]/config[/b] : Requirements for pip[br]&#xD;
