@@ -1,3 +1,4 @@
 #!/bin/bash
-pip3 install -r "/app/config/requirements.txt"
+cd /config
+pip3 install -r "/config/requirements.txt"
 crontab "/config/cron"

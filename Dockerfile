@@ -1,13 +1,23 @@
 FROM python:3
 LABEL Name=python3-scripts-unraid Version=0.0.1
-RUN apt-get update && apt-get -y install cron
-WORKDIR /app
-ADD . /app
+MAINTAINER bender77
+VOLUME [ "/config" ]
+ENV HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8"
+RUN export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive &&\
+apt-get update && apt-get install -y \ 
+cron \
+curl
+#WORKDIR /app
+#ADD . /app
 
 # Using pip:
-VOLUME [ "/app" ]
 
-CMD ["/bin/bash","entry.sh"]
+
+ADD entry.sh /config/entry.sh
+
+RUN chmod +x /config/entry.sh
+
+CMD ["/bin/bash"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
