@@ -20,7 +20,7 @@
   <Privileged>false</Privileged>
   <Overview>Python3 container for executing various scripts.  Includes Python-Cron </Overview>
   <WebUI>http://[IP]:[PORT:8675309]/</WebUI>
-  <Icon>https://github.com/benderstwin/Python3-Scripts-Unraid/blob/master/Python.png</Icon>
+  <Icon>https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/Python.png</Icon>
   <Description>Container Description Goes Here [br]&#xD;
   [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
   [b]/config[/b] : Requirements for pip[br]&#xD;
@@ -41,10 +41,7 @@
       <ContainerDir>/app</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir></ContainerDir>
-  </Data>
+    </Data>
   <Environment>
     <Variable>
       <Value>99</Value>

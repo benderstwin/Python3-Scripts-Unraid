@@ -8,16 +8,11 @@ apt-get update && apt-get install -y \
 cron \
 curl
 #WORKDIR /app
-ADD . /app
+COPY entry.sh entry.sh
 
-# Using pip:
-
-
-ADD entry.sh /config/entry.sh
-
-RUN chmod +x /config/entry.sh
-
-CMD ["/bin/bash"]
+RUN chmod +x entry.sh
+VOLUME [ "/config" ]
+CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
