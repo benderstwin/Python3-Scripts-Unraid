@@ -12,7 +12,7 @@ COPY entry.sh entry.sh
 
 RUN chmod +x entry.sh
 VOLUME [ "/config" ]
-CMD ["/bin/bash","entry.sh"]
+CMD ["entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
