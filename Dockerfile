@@ -1,7 +1,7 @@
 FROM python:3
 LABEL Name=python3-scripts-unraid Version=0.0.1
 MAINTAINER bender77
-VOLUME [ "/config" ]
+VOLUME [ "/appdir" ]
 ENV HOME="/root" LC_ALL="C.UTF-8" LANG="en_US.UTF-8" LANGUAGE="en_US.UTF-8"
 RUN export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive &&\
 apt-get update && apt-get install -y \ 
@@ -11,7 +11,6 @@ WORKDIR /app
 RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
 RUN chmod +x entry.sh
-VOLUME [ "/appdir" ]
 CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
