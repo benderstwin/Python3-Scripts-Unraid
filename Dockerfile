@@ -11,7 +11,7 @@ WORKDIR /app
 RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
 RUN chmod +x entry.sh
-VOLUME [ "/config" ]
+VOLUME [ "/appdir" ]
 CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
