@@ -7,12 +7,12 @@ RUN export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive &&\
 apt-get update && apt-get install -y \ 
 cron \
 curl
-#WORKDIR /app
-COPY entry.sh entry.sh
+WORKDIR /app
+RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
 RUN chmod +x entry.sh
 VOLUME [ "/config" ]
-CMD ["entry.sh"]
+CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
