@@ -11,8 +11,8 @@ WORKDIR /app
 RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
 RUN chmod +x entry.sh
-ENTRYPOINT ["entry.sh"]
-CMD ["/bin/bash"]
+
+CMD ["/bin/bash","entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
