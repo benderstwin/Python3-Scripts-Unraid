@@ -10,9 +10,9 @@ curl
 WORKDIR /app
 RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
-RUN chmod a+x entry.sh
+RUN chmod +x entry.sh
 
-CMD ["/bin/bash","entry.sh"]
+CMD ["/bin/bash", "entry.sh", "python3"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
