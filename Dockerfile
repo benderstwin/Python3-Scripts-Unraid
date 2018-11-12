@@ -10,7 +10,7 @@ curl
 WORKDIR /app
 RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/master/entry.sh 
 
-RUN chmod +x entry.sh
+RUN chmod a+x entry.sh
 
 CMD ["/bin/bash","entry.sh"]
 
