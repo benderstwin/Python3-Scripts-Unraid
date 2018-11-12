@@ -8,7 +8,7 @@ apt-get update && apt-get install -y \
 cron \
 curl
 #WORKDIR /app
-#ADD . /app
+ADD . /app
 
 # Using pip:
 
