@@ -106,3 +106,4 @@ venv.bak/
 # configs
 configuration.py
 /plex
+docker-compose*
