@@ -5,4 +5,5 @@ crontab "/appdir/config/cron" root
 cd "/appdir"
 chmod -R +X "/appdir/collectors/"
 cron -f
+service start cron
 tail -f /var/log/faillog > /tmp/faillog
