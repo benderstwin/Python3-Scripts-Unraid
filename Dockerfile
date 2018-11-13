@@ -12,7 +12,7 @@ RUN wget https://raw.githubusercontent.com/benderstwin/Python3-Scripts-Unraid/ma
 
 RUN chmod +x entry.sh
 
-CMD ["/bin/bash", "entry.sh", "python3"]
+CMD ["/bin/bash", "entry.sh"]
 
 # Using pipenv:
 #RUN python3 -m pip install pipenv
