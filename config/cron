@@ -1,1 +1,2 @@
-1 * * * * root /collectors/tautulli.py > /appdir/config/cron.log 2>&1
+* * * * * root cd /appdir/collectors && /usr/local/bin/python3 plex//tautulli.py >> /appdir/cron.log 2>&1
+* * * * * whoami >> /appdir/config/whoami.log
