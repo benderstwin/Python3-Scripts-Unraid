@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.7
 LABEL Name=python3-scripts-unraid Version=0.0.1
 MAINTAINER bender77
 VOLUME [ "/appdir"]
